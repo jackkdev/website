@@ -1,14 +1,13 @@
 import React from "react";
-import { Layout } from "../components/layout";
 import { Title } from "../components/title";
 import { Nav } from "../components/nav/nav";
-import { NavLink } from "../components/nav/nav-link";
+import { NavButton } from "../components/nav/nav-button";
 import { Container } from "../components/container";
 import { Wrapper } from "../components/wrapper";
 import { Flex } from "../components/flex/flex";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBoxes, faHome } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default () => {
   return (
@@ -20,18 +19,18 @@ export default () => {
             subtitle="i create stuff for people"
           />
           <Nav>
-            <NavLink href="/">
-              <FontAwesomeIcon icon={faHome} className="mr-2" />
-              <span>Home</span>
-            </NavLink>
-            <NavLink href="/">
+            <NavButton href="/projects">
               <FontAwesomeIcon icon={faBoxes} className="mr-2" />
               <span>Projects</span>
-            </NavLink>
-            <NavLink a href="https://github.com/jackkcc">
+            </NavButton>
+            <NavButton a href="https://discord">
+              <FontAwesomeIcon icon={faDiscord} className="mr-2" />
+              <span>Discord</span>
+            </NavButton>
+            <NavButton a href="https://github.com/jackkcc">
               <FontAwesomeIcon icon={faGithub} className="mr-2" />
               <span>GitHub</span>
-            </NavLink>
+            </NavButton>
           </Nav>
         </Flex>
       </Container>

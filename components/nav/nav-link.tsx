@@ -6,24 +6,14 @@ type Props = {
   a?: boolean;
 };
 
-export const NavLink: React.FC<Props> = ({ children, href, a = false }) => {
+export const NavLink: React.FC<Props> = ({ href, a = false, children }) => {
   return (
-    <li className="inline-block mx-4">
+    <li className="inline-block px-4 text-gray-300 hover:text-gray-100 animation font-bold nexa">
       {a ? (
-        <a
-          href={href}
-          className="text-shadow-lg px-4 py-2 animation text-gray-100 text-lg rounded-md bg-pink-400 hover:bg-pink-300 nexa font-bold block"
-        >
-          {children}
-        </a>
+        <a href={href}>{children}</a>
       ) : (
         <Link href={href}>
-          <a
-            href="#"
-            className="text-shadow-lg px-4 py-2 animation text-gray-100 text-lg rounded-md bg-pink-400 hover:bg-pink-300 nexa font-bold block"
-          >
-            {children}
-          </a>
+          <a href="#">{children}</a>
         </Link>
       )}
     </li>

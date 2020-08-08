@@ -23,11 +23,11 @@ export default () => {
               <FontAwesomeIcon icon={faBoxes} className="mr-2" />
               <span>Projects</span>
             </NavButton>
-            <NavButton a href="https://discord">
+            <NavButton a href="https://discord.gg/V8RzFM4">
               <FontAwesomeIcon icon={faDiscord} className="mr-2" />
               <span>Discord</span>
             </NavButton>
-            <NavButton a href="https://github.com/jackkcc">
+            <NavButton a href="https://github.com/jackkdev">
               <FontAwesomeIcon icon={faGithub} className="mr-2" />
               <span>GitHub</span>
             </NavButton>
